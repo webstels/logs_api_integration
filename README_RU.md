@@ -12,8 +12,8 @@ pip install requests
 Кроме того, для работы необходима СУБД ClickHouse, инструкцию по ее установке можно найти на [официальном сайте](https://clickhouse.yandex/).
 
 ## Настройка
-Прежде всего, необходимо переименовать [config](./configs/config.json.example) в ./configs/config.json.
-Затем, необходимо заполнить [config](./configs/config.json)
+Прежде всего, необходимо переименовать ./configs/config.json.example в ./configs/config.json.
+Затем, необходимо заполнить ./configs/config.json
 ```javascript
 {
 	"token" : "<your_token>", // токен для доступа к API Яндекс.Метрики

@@ -14,8 +14,8 @@ pip install requests
 Also, you need a running ClickHouse instance to load data into it. Instruction how to install ClickHouse can be found on [official site](https://clickhouse.yandex/).
 
 ## Setting up
-First of all, rename [config](./configs/config.json.example) to ./configs/config.json.
-Then, you need to fill in [config](./configs/config.json)
+First of all, rename ./configs/config.json.example to ./configs/config.json.
+Then, you need to fill in ./configs/config.json
 ```javascript
 {
 	"token" : "<your_token>", // token to access Yandex.Metrica API
