@@ -1,0 +1,48 @@
+{
+	"token" : "<your_token>",
+	"counter_id": "<your_counter_id>",
+	"disable_ssl_verification_for_clickhouse": 1,
+	"visits_fields": [
+	    "ym:s:counterID",
+	    "ym:s:dateTime",
+	    "ym:s:date",
+	    "ym:s:startURL",
+	    "ym:s:endURL",
+	    "ym:s:pageViews",
+	    "ym:s:visitDuration",
+	    "ym:s:bounce",
+	    "ym:s:ipAddress",
+	    "ym:s:regionCountry",
+	    "ym:s:regionCity",
+		"ym:s:regionCountryID",
+		"ym:s:regionCityID",
+		"ym:s:goalsID",
+		"ym:s:browserLanguage",
+		"ym:s:browserCountry",
+		"ym:s:clientTimeZone",
+		"ym:s:deviceCategory",
+		"ym:s:mobilePhone",
+		"ym:s:mobilePhoneModel",
+		"ym:s:operatingSystemRoot",
+		"ym:s:operatingSystem",
+		"ym:s:browser"
+	],
+	"hits_fields": [
+	    "ym:pv:counterID",
+	    "ym:pv:dateTime",
+	    "ym:pv:date",
+	    "ym:pv:clientID",
+	    "ym:pv:lastSocialNetwork"
+	],
+	"log_level": "INFO",
+	"retries": 1,
+	"retries_delay": 20,
+	"clickhouse": {
+		"host": "http://localhost:8123",
+		"user": "",
+		"password": "",
+		"visits_table": "visits_all",
+		"hits_table": "hits_all",
+		"database": "default"
+	}
+}
